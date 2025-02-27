@@ -33,7 +33,7 @@ The course covers various **data structures**, including:
 Data structures are classified into two categories:
 
 - **Physical Data Structures** (how data is stored): Arrays, Matrices, Linked Lists.
-- **Logical Data Structures** (how data is utilized): Stacks, Queues, Trees, Graphs, etc.
+- **Logical Data Structures** (how data is utilized): Stacks, Queues, Trees, Graphs, and Hashing.
 
 ### **4. Why Study Data Structures?**
 
