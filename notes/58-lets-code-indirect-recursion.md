@@ -55,15 +55,24 @@ int main() {
 ````
 
 📌 **Program Execution and Output**
+
 ├── Initial Call: `A(20)`
+
 ├── Execution Flow:
 │ ├── `A(20)` → Prints `20` → Calls `B(19)`
+
 │ ├── `B(19)` → Prints `19` → Calls `A(9)`
+
 │ ├── `A(9)` → Prints `9` → Calls `B(8)`
+
 │ ├── `B(8)` → Prints `8` → Calls `A(4)`
+
 │ ├── `A(4)` → Prints `4` → Calls `B(3)`
+
 │ ├── `B(3)` → Prints `3` → Calls `A(1)`
+
 │ ├── `A(1)` → Prints `1` → Calls `B(0)` (Stops)
+
 ├── Final Output: **20 19 9 8 4 3 1**
 
 📌 **Key Takeaways**
