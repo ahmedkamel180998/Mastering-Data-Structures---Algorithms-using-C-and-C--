@@ -6,11 +6,6 @@
    ├── Function A calls Function B, and Function B calls Function A.
    ├── The recursion continues until a base condition is met.
 
-📌 **Project Setup**
-   ├── Project Name: **Recursion**
-   ├── Uses the same project for all recursion demonstrations.
-   ├── Deletes and rewrites fresh code in the same project.
-
 📌 **Implementation of Indirect Recursion**
    ├── **Function A**
    │   ├── Takes parameter `n`
