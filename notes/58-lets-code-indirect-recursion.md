@@ -2,7 +2,7 @@
 
 📌 **Indirect Recursion Explanation**
 
-```
+```md
 ├── Uses multiple functions calling each other in a cycle.
 ├── Function A calls Function B, and Function B calls Function A.
 ├── The recursion continues until a base condition is met.
