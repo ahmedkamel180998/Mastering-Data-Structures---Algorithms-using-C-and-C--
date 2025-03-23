@@ -10,7 +10,7 @@
 
 📌 **Implementation of Indirect Recursion**
 
-```
+```md
 ├── **Function A**
 │ ├── Takes parameter `n`
 │ ├── If `n > 0`, prints `n`
