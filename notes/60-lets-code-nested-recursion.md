@@ -1,33 +1,48 @@
-### **Demonstration of Nested Recursion**
+### **Nested Recursion in C++**
 
-#### **1️⃣ Nested Recursion Function**
+#### 🟢 **1. Concept of Nested Recursion**
 
-- Function **takes an integer `n`** as input.
-- **Base Case:** If `n > 100`, return `n - 10`.
-- **Recursive Case:** Otherwise, return `fun(n + 11)`.
+- A function calls itself with **another recursive call** as its argument.
+- The **inner recursive call** must resolve first before the **outer recursive call** can proceed.
 
-#### **2️⃣ Running the Program**
+#### 🟠 **2. Code Implementation**
 
-- Calls the function in the `main()` function.
-- Stores the result in a variable `r`.
-- Prints the result of `r`.
+- Function Definition:
+  ```cpp
+  int fun(int n) {
+      if (n > 100)
+          return n - 10;
+      return fun(fun(n + 11)); // Nested recursion
+  }
+  ```
+- **Main Function**:
+  ```cpp
+  int main() {
+      int r = fun(95);
+      printf("%d\n", r);
+      return 0;
+  }
+  ```
+- Calls function `fun(n)` with different values: **95, 99, 100, 200, 30**.
 
-#### **3️⃣ Output Observations**
+#### 🔵 **3. Tracing Function Call (`fun(95)`)**
 
-| Input      | Output |
-| ---------- | ------ |
-| `fun(95)`  | `91`   |
-| `fun(99)`  | `91`   |
-| `fun(100)` | `91`   |
-| `fun(200)` | `190`  |
-| `fun(30)`  | `91`   |
+- `fun(95)` → Calls `fun(fun(106))`
+- `fun(106)` → Returns **96** (`106 - 10`)
+- `fun(96)` → Calls `fun(fun(107))`
+- `fun(107)` → Returns **97** (`107 - 10`)
+- This pattern continues until reaching **fun(101) → 91**.
+- **Final result for any input ≤ 100 is 91.**
 
-- **Reasoning for `fun(30) → 91`**
-  - 30 recursively increases to **101**.
-  - When `n = 101`, it enters the base case: `101 - 10 = 91`.
-  - Any value **less than 100 eventually leads to 91**.
+#### 🟣 **4. Observations**
 
-#### **4️⃣ Debugging & Understanding**
+- **If `n > 100`** → Directly returns `n - 10`.
+- **If `n ≤ 100`** → Recursion expands until `n > 100` is reached.
+- **All values ≤ 100 return 91** after recursion completes.
 
-- Encourages using a **debugger** for better understanding.
-- Tracing the function helps visualize **how recursion unfolds**.
+#### 🔴 **5. Conclusion**
+
+- **Nested recursion leads to deep recursion trees.**
+- **Tracing the function manually can be complex.**
+- **Debugging tools help visualize recursion flow.**
+- **Efficient but not optimal for large values due to recursion depth.**
