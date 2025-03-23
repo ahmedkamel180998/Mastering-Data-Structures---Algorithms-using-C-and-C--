@@ -32,7 +32,12 @@
 - `fun(96)` → Calls `fun(fun(107))`
 - `fun(107)` → Returns **97** (`107 - 10`)
 - This pattern continues until reaching **fun(101) → 91**.
-- **Final result for any input ≤ 100 is 91.**
+
+---
+
+## **Final result for any input ≤ 100 is 91.**
+
+---
 
 #### 🟣 **4. Observations**
 
