@@ -79,8 +79,4 @@ int main() {
 ├── Indirect recursion involves two or more functions calling each other.
 ├── Function prototypes are necessary to avoid compilation errors.
 ├── Recursion stops when the base condition is met.
-├── Indirect recursion can be traced using debugging tools.
 ```
-
-✅ **Conclusion**
-The program successfully demonstrates indirect recursion by alternating calls between Function A and Function B until the recursion terminates.
