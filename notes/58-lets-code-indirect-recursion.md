@@ -1,12 +1,16 @@
 ### **Indirect Recursion in C++**
 
-```
 📌 **Indirect Recursion Explanation**
+
+```
 ├── Uses multiple functions calling each other in a cycle.
 ├── Function A calls Function B, and Function B calls Function A.
 ├── The recursion continues until a base condition is met.
+```
 
 📌 **Implementation of Indirect Recursion**
+
+```
 ├── **Function A**
 │ ├── Takes parameter `n`
 │ ├── If `n > 0`, prints `n`
@@ -16,8 +20,11 @@
 │ ├── Takes parameter `n`
 │ ├── If `n > 1`, prints `n`
 │ ├── Calls Function A with `n / 2`
+```
 
 📌 **Handling Compilation Error**
+
+```
 ├── Encountered error: **Function B is not defined before usage in Function A**
 ├── **Solution:** Declare Function B **before** Function A to resolve the error.
 ```
@@ -51,9 +58,9 @@ int main() {
 }
 ```
 
-```
 📌 **Program Execution and Output**
 
+```
 ├── Initial Call: `A(20)`
 ├── Execution Flow:
 │ ├── `A(20)` → Prints `20` → Calls `B(19)`
@@ -66,8 +73,9 @@ int main() {
 ├── Final Output: **20 19 9 8 4 3 1**
 ```
 
-```
 📌 **Key Takeaways**
+
+```
 ├── Indirect recursion involves two or more functions calling each other.
 ├── Function prototypes are necessary to avoid compilation errors.
 ├── Recursion stops when the base condition is met.
