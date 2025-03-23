@@ -24,7 +24,7 @@
 
 📌 **Handling Compilation Error**
 
-```
+```md
 ├── Encountered error: **Function B is not defined before usage in Function A**
 ├── **Solution:** Declare Function B **before** Function A to resolve the error.
 ```
@@ -60,7 +60,7 @@ int main() {
 
 📌 **Program Execution and Output**
 
-```
+```md
 ├── Initial Call: `A(20)`
 ├── Execution Flow:
 │ ├── `A(20)` → Prints `20` → Calls `B(19)`
@@ -75,7 +75,7 @@ int main() {
 
 📌 **Key Takeaways**
 
-```
+```md
 ├── Indirect recursion involves two or more functions calling each other.
 ├── Function prototypes are necessary to avoid compilation errors.
 ├── Recursion stops when the base condition is met.
