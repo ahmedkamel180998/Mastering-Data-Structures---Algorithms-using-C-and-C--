@@ -5,7 +5,7 @@
 - The goal is to find the sum of the first **N natural numbers** using **recursion**.
 - **Definition**: The sum of the first **N** natural numbers is calculated as:  
   \[
-  S = 1 + 2 + 3 + \dots + N
+  S = 1 + 2 + 3 + … + N
   \]
 - Example:
   - For **N = 7**, the sum is **1 + 2 + 3 + 4 + 5 + 6 + 7 = 28**.
