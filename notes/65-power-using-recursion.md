@@ -38,8 +38,11 @@ int power(int m, int n) {
 #### **3. Optimized Approach: Reducing Multiplications**
 
 - Instead of decrementing ( n ) one by one, we can **halve** the exponent when possible:
-  - If ( n ) is even: ( m^n = (m^{n/2})^2 )
-  - If ( n ) is odd: ( m^n = m × (m^{(n-1)/2})^2 )
+
+```
+  - If ( n ) is even:  m^n = (    (m × m) ^   (n/2)       )
+  - If ( n ) is odd :  m^n = (m × (m × m) ^ ( (n-1)/2 )   )
+```
 
 ##### **3.1 Optimized Recursive Function**
 
