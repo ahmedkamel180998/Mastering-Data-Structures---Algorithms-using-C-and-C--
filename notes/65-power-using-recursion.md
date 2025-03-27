@@ -50,14 +50,10 @@ To improve efficiency, we use **Exponentiation by Squaring** by reducing the num
 
 Instead of decreasing `n` one by one, we use the following properties:
 
-- **If `n` is even**:  
-  [
-  m^n = (m × m)^{(n/2)}
-  ]
-- **If `n` is odd**:  
-  [
-  m^n = m × (m × m)^{((n-1)/2)}
-  ]
+```
+  - If ( n ) is even:  m^n = (    (m × m) ^   (n/2)       )
+  - If ( n ) is odd :  m^n = (m × (m × m) ^ ( (n-1)/2 )   )
+```
 
 #### **3.2 Optimized Recursive Implementation in C++**
 
