@@ -1,5 +1,4 @@
-$
-
+````md
 ### **Summary of the Transcript on the Exponentiation Function**
 
 #### **1. Introduction to the Exponentiation Function**
@@ -33,6 +32,7 @@ int power(int m, int n) {
     return power(m, n - 1) * m;
 }
 ```
+````
 
 - If `n == 0`, return `1` (base case).
 - Otherwise, recursively call `power(m, n-1)`, multiplying the result by `m`.
@@ -144,4 +144,7 @@ int power(int m, int n) {
 | **Iterative**           | \(O(\log n)\)   | \(O(1)\)         | Best approach              |
 
 The **iterative approach** is the most efficient in terms of both time and space complexity.
-$
+
+```
+
+```
