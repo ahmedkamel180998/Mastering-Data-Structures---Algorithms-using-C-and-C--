@@ -9,11 +9,11 @@ This discussion explains how to compute the **factorial** of a number using both
 - Factorial of a number **n** is the product of all positive integers from `1` to `n`.
 - Represented as:  
   \[
-  n! = 1 \times 2 \times 3 \times \dots \times n
+  n! = 1 _ 2 _ 3 _ … _ n
   \]
 - Example:  
   \[
-  5! = 1 \times 2 \times 3 \times 4 \times 5 = 120
+  5! = 1 _ 2 _ 3 _ 4 _ 5 = 120
   \]
 - **Special Cases**:
   - **0! = 1** (By definition)
@@ -27,7 +27,7 @@ This discussion explains how to compute the **factorial** of a number using both
 
 Factorial can be expressed recursively as:  
 \[
-n! = (n - 1)! \times n
+n! = (n - 1)! \* n
 \]
 with the **base case**:  
 \[
