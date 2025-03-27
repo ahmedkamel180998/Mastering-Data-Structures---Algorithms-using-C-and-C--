@@ -36,5 +36,3 @@
 - **Two approaches:**
   1.  **Basic recursive** (more multiplications)
   2.  **Optimized recursive** (faster, uses squaring method)
-- ✅ **Both versions tested and working correctly**
-- ✍️ **Encouraged to practice implementing the functions**
