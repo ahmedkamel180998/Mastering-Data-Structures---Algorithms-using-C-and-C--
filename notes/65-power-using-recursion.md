@@ -86,55 +86,9 @@ Multiplying back:
 - `power(4,4) = 256`
 - `power(2,9) = 2 × 256 = 512`
 
-##### **3.4 Time & Space Complexity**
-
-- **Time Complexity:** \(O(log n)\)
-- **Space Complexity:** \(O(log n)\) due to recursion depth.
-
----
-
-### **4. Iterative Approach (Best Optimization)**
-
-To avoid recursion overhead, we implement an **iterative version**.
-
-#### **4.1 Iterative Function in C++**
-
-```cpp
-int power(int m, int n) {
-    int result = 1;
-    while (n > 0) {
-        if (n % 2 == 1) result *= m;
-        m *= m;
-        n /= 2;
-    }
-    return result;
-}
-```
-
-- Instead of recursion, we **iterate**, continuously squaring `m` and halving `n`.
-- If `n` is odd, we multiply `result` by `m`.
-
-#### **4.2 Example Execution for `power(2,9)`**
-
-1. `n = 9`: Odd → `result *= 2`, `m = 2 × 2 = 4`, `n = 4`
-2. `n = 4`: Even → `m = 4 × 4 = 16`, `n = 2`
-3. `n = 2`: Even → `m = 16 × 16 = 256`, `n = 1`
-4. `n = 1`: Odd → `result *= 256`, `m = 256 × 256 = 65536`, `n = 0`
-5. Done. Final result = 512.
-
-#### **4.3 Time Complexity**
-
-- **Time Complexity:** \(O(log n)\), as `n` is halved at each step.
-- **Space Complexity:** \(O(1)\), since no recursion is used.
-
----
-
 ### **5. Conclusion**
 
 | Approach                | Time Complexity | Space Complexity | Notes                      |
 | ----------------------- | --------------- | ---------------- | -------------------------- |
 | **Basic Recursive**     | \(O(n)\)        | \(O(n)\)         | Simple but slow            |
 | **Optimized Recursive** | \(O(log n)\)    | \(O(log n)\)     | Uses fewer multiplications |
-| **Iterative**           | \(O(log n)\)    | \(O(1)\)         | Best approach              |
-
-The **iterative approach** is the most efficient in terms of both time and space complexity.
