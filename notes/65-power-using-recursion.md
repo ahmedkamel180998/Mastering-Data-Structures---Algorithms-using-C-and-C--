@@ -1,4 +1,3 @@
-````md
 ### **Summary of the Transcript on the Exponentiation Function**
 
 #### **1. Introduction to the Exponentiation Function**
@@ -6,9 +5,9 @@
 The function computes exponentiation (`m^n`), meaning `m` is multiplied by itself `n` times.
 
 For example:  
-\[
-2^5 = 2 \times 2 \times 2 \times 2 \times 2 = 32
-\]  
+[
+2^5 = 2 × 2 × 2 × 2 × 2 = 32
+]  
 The goal is to implement an efficient recursive solution for this calculation.
 
 ---
@@ -16,13 +15,13 @@ The goal is to implement an efficient recursive solution for this calculation.
 ### **2. Basic Recursive Approach**
 
 The exponentiation function follows the recurrence relation:  
-\[
-\text{power}(m, n) = m \times \text{power}(m, n-1)
-\]  
+[
+Power(m, n) = m × Power(m, n-1)
+]  
 with the base case:  
-\[
-\text{power}(m, 0) = 1
-\]
+[
+Power(m, 0) = 1
+]
 
 ##### **2.1 Implementation in C++**
 
@@ -32,7 +31,6 @@ int power(int m, int n) {
     return power(m, n - 1) * m;
 }
 ```
-````
 
 - If `n == 0`, return `1` (base case).
 - Otherwise, recursively call `power(m, n-1)`, multiplying the result by `m`.
@@ -53,13 +51,13 @@ To improve efficiency, we use **Exponentiation by Squaring** by reducing the num
 Instead of decreasing `n` one by one, we use the following properties:
 
 - **If `n` is even**:  
-  \[
-  m^n = (m \times m)^{(n/2)}
-  \]
+  [
+  m^n = (m × m)^{(n/2)}
+  ]
 - **If `n` is odd**:  
-  \[
-  m^n = m \times (m \times m)^{((n-1)/2)}
-  \]
+  [
+  m^n = m × (m × m)^{((n-1)/2)}
+  ]
 
 #### **3.2 Optimized Recursive Implementation in C++**
 
@@ -94,8 +92,8 @@ Multiplying back:
 
 ##### **3.4 Time & Space Complexity**
 
-- **Time Complexity:** \(O(\log n)\)
-- **Space Complexity:** \(O(\log n)\) due to recursion depth.
+- **Time Complexity:** \(O(log n)\)
+- **Space Complexity:** \(O(log n)\) due to recursion depth.
 
 ---
 
@@ -130,7 +128,7 @@ int power(int m, int n) {
 
 #### **4.3 Time Complexity**
 
-- **Time Complexity:** \(O(\log n)\), as `n` is halved at each step.
+- **Time Complexity:** \(O(log n)\), as `n` is halved at each step.
 - **Space Complexity:** \(O(1)\), since no recursion is used.
 
 ---
@@ -140,11 +138,7 @@ int power(int m, int n) {
 | Approach                | Time Complexity | Space Complexity | Notes                      |
 | ----------------------- | --------------- | ---------------- | -------------------------- |
 | **Basic Recursive**     | \(O(n)\)        | \(O(n)\)         | Simple but slow            |
-| **Optimized Recursive** | \(O(\log n)\)   | \(O(\log n)\)    | Uses fewer multiplications |
-| **Iterative**           | \(O(\log n)\)   | \(O(1)\)         | Best approach              |
+| **Optimized Recursive** | \(O(log n)\)    | \(O(log n)\)     | Uses fewer multiplications |
+| **Iterative**           | \(O(log n)\)    | \(O(1)\)         | Best approach              |
 
 The **iterative approach** is the most efficient in terms of both time and space complexity.
-
-```
-
-```
