@@ -20,9 +20,11 @@ However, `{A, B, C}` is the same as `{C, A, B}` since order does not change the 
 
 The formula for computing combinations is:
 
+$$
 \[
 C(n, r) = \frac{n!}{r! \times (n - r)!}
 \]
+$$
 
 where **n! (n factorial)** is the product of all integers from 1 to n.
 
